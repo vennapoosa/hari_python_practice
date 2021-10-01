@@ -1,0 +1,8 @@
+#voter1.py
+while True:
+	age=int(input("enter age of citizen:"))
+	if(age>=18)and(age<=100):
+		break
+	else:
+		print("invalied age")
+        print("citizen is eligible to vote")
