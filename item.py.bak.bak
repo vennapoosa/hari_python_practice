@@ -1,0 +1,31 @@
+ItemNumber=[101, 102, 103, 104]
+Itemname = ["milk","cheese","ghee","bread"]
+#ItemName=[Milk, Cheese, Ghee, Bread]
+Price=[42, 50, 500, 40]
+Stock=[10, 20, 15, 16]
+itemnum=input()
+itemname=input()
+#indexxname=index()
+quantity=input()
+for x in itemname:
+    print(x)
+if itemnum.isnumeric() and quantity.isnumeric() and (itemnum in ItemNumber):
+	itemnum=int(itemnum)
+	quantity=int(quantity)
+for i in range(len(ItemNumber)):
+	if itemnum == ItemNumber[i]:
+		indexx=i
+		break
+if (quantity<=Stock[indexx()]):
+	print("{:1f} INR".format(quantity*Price[indexx]))
+	indexx=i
+	Stock=Stock[indexx()]-quantity
+	print("{0} LEFT".format(Stock[indexx]))
+	indexx=i
+elif quantity>Stock[indexx()]:
+	print("NO STOCK")
+	print("{0} LEFT".format(Stock[indexx]))
+	indexx=i
+else:
+	print("INVALID INPUT")
+

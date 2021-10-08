@@ -1,0 +1,2 @@
+s='Haritha'
+print(s[1:6])
